@@ -31,9 +31,9 @@ export const AppShell = () => {
   return (
     <div className="min-h-screen w-full">
       <SEO title={meta.title} description={meta.description} path={pathname} />
-      <div className="mx-auto max-w-md min-h-screen relative pb-28">
+      <main className="mx-auto max-w-md min-h-screen relative pb-28">
         <Outlet />
-      </div>
+      </main>
       <BottomNav />
     </div>
   );
