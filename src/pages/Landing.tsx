@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Sparkles, Heart, Users, Shield, MessageCircle, MapPin } from "lucide-react";
+import { SEO } from "@/components/SEO";
 
 const features = [
   { icon: Sparkles, title: "Vibe-based matching", desc: "A playful quiz pairs you with people who actually get you.", grad: "gradient-warm" },
@@ -14,6 +15,11 @@ const features = [
 const Landing = () => {
   return (
     <div className="min-h-screen w-full overflow-hidden">
+      <SEO
+        title="BestieFinder — Find your person, not just a profile"
+        description="BestieFinder matches you with new friends based on personality, interests, and vibe. Real friendships, no dating app energy."
+        path="/"
+      />
       {/* Nav */}
       <header className="px-5 py-5 flex items-center justify-between max-w-6xl mx-auto">
         <div className="flex items-center gap-2">
