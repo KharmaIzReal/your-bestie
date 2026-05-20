@@ -37,7 +37,7 @@ const Onboarding = () => {
         description="Set up your BestieFinder profile in minutes. Share your vibe, interests, and goals so we can match you with friends who actually get you."
         path="/onboarding"
       />
-      <div className="mx-auto max-w-md min-h-screen px-5 py-6 flex flex-col">
+      <main className="mx-auto max-w-md min-h-screen px-5 py-6 flex flex-col">
         {/* Header */}
         <div className="flex items-center justify-between mb-6">
           <Button variant="ghost" size="icon" onClick={back} className="rounded-full">
@@ -169,7 +169,7 @@ const Onboarding = () => {
         <Button onClick={next} size="lg" className="w-full h-14 rounded-2xl gradient-primary text-primary-foreground border-0 text-base font-extrabold shadow-glow mt-6">
           {step === totalSteps - 1 ? "Find my besties 🎉" : "Continue"} <ArrowRight className="w-5 h-5 ml-1" />
         </Button>
-      </div>
+      </main>
     </div>
   );
 };
