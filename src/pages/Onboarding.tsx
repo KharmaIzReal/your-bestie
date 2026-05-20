@@ -40,7 +40,7 @@ const Onboarding = () => {
       <main className="mx-auto max-w-md min-h-screen px-5 py-6 flex flex-col">
         {/* Header */}
         <div className="flex items-center justify-between mb-6">
-          <Button variant="ghost" size="icon" onClick={back} className="rounded-full">
+          <Button variant="ghost" size="icon" onClick={back} aria-label="Go back" className="rounded-full">
             <ArrowLeft className="w-5 h-5" />
           </Button>
           <span className="text-sm font-bold text-muted-foreground">{step + 1} / {totalSteps}</span>
@@ -64,17 +64,17 @@ const Onboarding = () => {
               </div>
               <div className="space-y-4">
                 <div>
-                  <label className="text-sm font-bold mb-1.5 block">Name</label>
-                  <Input value={name} onChange={e => setName(e.target.value)} placeholder="What should friends call you?" className="h-14 rounded-2xl bg-card border-2" />
+                  <label htmlFor="onboarding-name" className="text-sm font-bold mb-1.5 block">Name</label>
+                  <Input id="onboarding-name" value={name} onChange={e => setName(e.target.value)} placeholder="What should friends call you?" className="h-14 rounded-2xl bg-card border-2" />
                 </div>
                 <div className="grid grid-cols-2 gap-3">
                   <div>
-                    <label className="text-sm font-bold mb-1.5 block">Age</label>
-                    <Input value={age} onChange={e => setAge(e.target.value)} className="h-14 rounded-2xl bg-card border-2" />
+                    <label htmlFor="onboarding-age" className="text-sm font-bold mb-1.5 block">Age</label>
+                    <Input id="onboarding-age" value={age} onChange={e => setAge(e.target.value)} className="h-14 rounded-2xl bg-card border-2" />
                   </div>
                   <div>
-                    <label className="text-sm font-bold mb-1.5 block">Pronouns</label>
-                    <Input value={pronouns} onChange={e => setPronouns(e.target.value)} className="h-14 rounded-2xl bg-card border-2" />
+                    <label htmlFor="onboarding-pronouns" className="text-sm font-bold mb-1.5 block">Pronouns</label>
+                    <Input id="onboarding-pronouns" value={pronouns} onChange={e => setPronouns(e.target.value)} className="h-14 rounded-2xl bg-card border-2" />
                   </div>
                 </div>
               </div>
