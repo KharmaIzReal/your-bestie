@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { ArrowRight, ArrowLeft, Sparkles, Check } from "lucide-react";
 import { quizQuestions } from "@/data/mockData";
+import { SEO } from "@/components/SEO";
 
 const interests = ["Matcha","Thrifting","Yoga","Hiking","Anime","Concerts","Reading","Baking","Photography","Gaming","Pilates","Coffee","Travel","Karaoke","Art","Plants","Skating","Cooking","Movies","F1"];
 const goals = ["Brunch buddy","Workout partner","Travel buddy","Deep convos","Concert plus-one","Game nights","Cafe hopping","Just vibes"];
@@ -31,6 +32,11 @@ const Onboarding = () => {
 
   return (
     <div className="min-h-screen w-full">
+      <SEO
+        title="Create your BestieFinder profile — vibe-based onboarding"
+        description="Set up your BestieFinder profile in minutes. Share your vibe, interests, and goals so we can match you with friends who actually get you."
+        path="/onboarding"
+      />
       <div className="mx-auto max-w-md min-h-screen px-5 py-6 flex flex-col">
         {/* Header */}
         <div className="flex items-center justify-between mb-6">
