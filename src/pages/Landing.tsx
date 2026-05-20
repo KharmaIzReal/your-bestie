@@ -33,6 +33,7 @@ const Landing = () => {
         </Link>
       </header>
 
+      <main>
       {/* Hero */}
       <section className="relative px-5 pt-8 pb-16 max-w-6xl mx-auto">
         <div className="absolute -top-20 -left-20 w-72 h-72 rounded-full gradient-warm opacity-30 blur-3xl" />
@@ -143,6 +144,7 @@ const Landing = () => {
         </div>
         <p className="text-center text-xs text-muted-foreground mt-8">© 2026 BestieFinder · Made with 💕</p>
       </section>
+      </main>
     </div>
   );
 };
