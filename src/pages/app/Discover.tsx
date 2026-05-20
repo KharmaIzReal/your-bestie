@@ -53,13 +53,13 @@ const Discover = () => {
       </div>
 
       <div className="flex items-center justify-center gap-4 mt-6">
-        <button onClick={() => swipe("pass")} className="w-16 h-16 rounded-full bg-card shadow-float flex items-center justify-center hover:scale-110 transition-transform border-2 border-muted">
+        <button onClick={() => swipe("pass")} aria-label="Pass on this bestie" className="w-16 h-16 rounded-full bg-card shadow-float flex items-center justify-center hover:scale-110 transition-transform border-2 border-muted">
           <X className="w-7 h-7 text-muted-foreground" strokeWidth={3} />
         </button>
-        <button className="w-12 h-12 rounded-full gradient-secondary shadow-soft flex items-center justify-center hover:scale-110 transition-transform">
+        <button aria-label="Super like" className="w-12 h-12 rounded-full gradient-secondary shadow-soft flex items-center justify-center hover:scale-110 transition-transform">
           <Sparkles className="w-5 h-5 text-white" />
         </button>
-        <button onClick={() => swipe("like")} className="w-16 h-16 rounded-full gradient-primary shadow-glow flex items-center justify-center hover:scale-110 transition-transform animate-pulse-glow">
+        <button onClick={() => swipe("like")} aria-label="Like this bestie" className="w-16 h-16 rounded-full gradient-primary shadow-glow flex items-center justify-center hover:scale-110 transition-transform animate-pulse-glow">
           <Heart className="w-7 h-7 text-white fill-white" strokeWidth={2.5} />
         </button>
       </div>
@@ -71,8 +71,8 @@ const Discover = () => {
             <h2 className="text-3xl font-extrabold text-gradient-warm">It's a match!</h2>
             <p className="text-muted-foreground">You and <b className="text-foreground">{matched.name}</b> liked each other. Say hi!</p>
             <div className="flex justify-center gap-3 py-2">
-              <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=you&backgroundColor=ffd5dc" className="w-20 h-20 rounded-3xl shadow-glow" />
-              <img src={matched.avatar} className="w-20 h-20 rounded-3xl shadow-glow" />
+              <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=you&backgroundColor=ffd5dc" alt="Your profile picture" className="w-20 h-20 rounded-3xl shadow-glow" />
+              <img src={matched.avatar} alt={`${matched.name}'s profile picture`} className="w-20 h-20 rounded-3xl shadow-glow" />
             </div>
             <div className="flex gap-2">
               <button onClick={() => setMatched(null)} className="flex-1 py-3 rounded-2xl bg-muted font-bold">Keep swiping</button>
@@ -90,7 +90,7 @@ const BestieCard = ({ bestie, interactive }: { bestie: Bestie; interactive: bool
     <div className={`relative w-full h-full rounded-[2rem] overflow-hidden shadow-float bg-card ${interactive ? "" : "pointer-events-none"}`}>
       <div className="absolute inset-0 gradient-warm" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,transparent_30%,rgba(0,0,0,0.5))]" />
-      <img src={bestie.avatar} alt={bestie.name} className="absolute top-10 left-1/2 -translate-x-1/2 w-44 h-44 rounded-[2rem] bg-white/30 shadow-glow" />
+      <img src={bestie.avatar} alt={`${bestie.name}'s profile picture`} className="absolute top-10 left-1/2 -translate-x-1/2 w-44 h-44 rounded-[2rem] bg-white/30 shadow-glow" />
 
       <div className="absolute top-4 right-4">
         <CompatRing value={bestie.compatibility} size={56} />
@@ -103,7 +103,7 @@ const BestieCard = ({ bestie, interactive }: { bestie: Bestie; interactive: bool
 
       <div className="absolute inset-x-0 bottom-0 p-5 text-white space-y-3">
         <div>
-          <h3 className="text-3xl font-extrabold leading-tight">{bestie.name}, {bestie.age}</h3>
+          <h2 className="text-3xl font-extrabold leading-tight">{bestie.name}, {bestie.age}</h2>
           <p className="text-sm opacity-90">{bestie.pronouns} · {bestie.location} · {bestie.distance} mi</p>
         </div>
         <p className="text-sm leading-snug opacity-95">{bestie.bio}</p>
