@@ -1,0 +1,13 @@
+# BestieFinder
+
+> BestieFinder is a mobile-first social app that matches people with new best friends based on personality, interests, communication style, lifestyle, and goals. Real friendships, no dating app energy.
+
+## Pages
+
+- [Landing](/): Overview of BestieFinder — vibe-based matching, mutual likes, built-in icebreakers, friend groups, and safety features.
+- [Onboarding](/onboarding): Multi-step profile creation covering name, age, pronouns, bio, interests, goals, and a vibe-check quiz.
+- [Home](/app): Personalized dashboard with today's top match, daily picks, vibe stats, and the icebreaker of the day.
+- [Discover](/app/discover): Swipeable card stack of potential best friends with compatibility scoring.
+- [Chats](/app/chats): Message matched friends with suggested icebreaker prompts.
+- [Groups](/app/groups): Browse and join friend groups for hangouts like brunches, hikes, and movie nights.
+- [Profile](/app/profile): Manage your profile, interests, vibe stats, and privacy settings.
