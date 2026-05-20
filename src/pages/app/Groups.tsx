@@ -6,7 +6,7 @@ const Groups = () => {
     <div className="px-5 pt-6 space-y-5 animate-fade-in">
       <div className="flex items-center justify-between">
         <h1 className="text-3xl font-extrabold">Groups</h1>
-        <button className="w-11 h-11 rounded-2xl gradient-primary text-primary-foreground shadow-glow flex items-center justify-center hover:scale-105 transition-transform">
+        <button aria-label="Create a new group" className="w-11 h-11 rounded-2xl gradient-primary text-primary-foreground shadow-glow flex items-center justify-center hover:scale-105 transition-transform">
           <Plus className="w-5 h-5" strokeWidth={3} />
         </button>
       </div>
@@ -24,7 +24,7 @@ const Groups = () => {
           <div className="flex items-center gap-2 pt-1">
             <div className="flex -space-x-2">
               {besties.slice(0, 4).map(b => (
-                <img key={b.id} src={b.avatar} className="w-8 h-8 rounded-full border-2 border-white bg-white/30" />
+                <img key={b.id} src={b.avatar} alt={`${b.name}'s profile picture`} className="w-8 h-8 rounded-full border-2 border-white bg-white/30" />
               ))}
             </div>
             <span className="text-xs font-extrabold">+4 going</span>
