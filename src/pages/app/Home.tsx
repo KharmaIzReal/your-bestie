@@ -14,7 +14,7 @@ const Home = () => {
           <p className="text-sm text-muted-foreground">Hey friend 👋</p>
           <h1 className="text-3xl font-extrabold">Today's vibes</h1>
         </div>
-        <button className="relative w-11 h-11 rounded-2xl glass border border-white/60 shadow-soft flex items-center justify-center">
+        <button aria-label="Notifications" className="relative w-11 h-11 rounded-2xl glass border border-white/60 shadow-soft flex items-center justify-center">
           <Bell className="w-5 h-5" />
           <span className="absolute top-2 right-2 w-2 h-2 rounded-full bg-primary" />
         </button>
@@ -26,7 +26,7 @@ const Home = () => {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,white,transparent_60%)] opacity-30" />
           <div className="relative flex items-center gap-4">
             <div className="relative">
-              <img src={featured.avatar} alt={featured.name} className="w-20 h-20 rounded-3xl bg-white/40 shadow-glow" />
+              <img src={featured.avatar} alt={`${featured.name}'s profile picture`} className="w-20 h-20 rounded-3xl bg-white/40 shadow-glow" />
               <div className="absolute -bottom-1 -right-1 bg-white rounded-full p-1 shadow-soft">
                 <Flame className="w-4 h-4 text-primary fill-primary" />
               </div>
@@ -68,7 +68,7 @@ const Home = () => {
           {top.map(b => (
             <Link key={b.id} to="/app/discover" className="block">
               <div className="bg-card rounded-3xl p-4 shadow-card flex items-center gap-3 hover:shadow-float transition-all hover:-translate-y-0.5">
-                <img src={b.avatar} alt={b.name} className="w-14 h-14 rounded-2xl bg-muted" />
+                <img src={b.avatar} alt={`${b.name}'s profile picture`} className="w-14 h-14 rounded-2xl bg-muted" />
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-1.5">
                     <p className="font-extrabold truncate">{b.name}, {b.age}</p>
