@@ -11,17 +11,17 @@ const Profile = () => {
       {/* Banner */}
       <div className="relative h-44 gradient-warm">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,white,transparent_60%)] opacity-30" />
-        <button onClick={() => setShowSettings(true)} className="absolute top-4 right-4 w-11 h-11 rounded-2xl glass border border-white/60 shadow-soft flex items-center justify-center">
+        <button onClick={() => setShowSettings(true)} aria-label="Open settings" className="absolute top-4 right-4 w-11 h-11 rounded-2xl glass border border-white/60 shadow-soft flex items-center justify-center">
           <Settings className="w-5 h-5" />
         </button>
-        <button className="absolute top-4 right-20 w-11 h-11 rounded-2xl glass border border-white/60 shadow-soft flex items-center justify-center">
+        <button aria-label="Edit profile" className="absolute top-4 right-20 w-11 h-11 rounded-2xl glass border border-white/60 shadow-soft flex items-center justify-center">
           <Edit3 className="w-5 h-5" />
         </button>
       </div>
 
       <div className="px-5 -mt-12 space-y-5">
         <div className="flex items-end gap-4">
-          <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=you&backgroundColor=ffd5dc" className="w-24 h-24 rounded-3xl bg-card border-4 border-card shadow-float" />
+          <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=you&backgroundColor=ffd5dc" alt="Your profile picture" className="w-24 h-24 rounded-3xl bg-card border-4 border-card shadow-float" />
           <div className="pb-2">
             <div className="flex items-center gap-1.5">
               <h1 className="text-2xl font-extrabold">Riley</h1>
@@ -64,7 +64,7 @@ const Profile = () => {
         <Section title="Theme">
           <div className="flex gap-3">
             {["gradient-warm","gradient-secondary","gradient-accent","gradient-sunset","gradient-sky"].map(g => (
-              <button key={g} className={`w-12 h-12 rounded-2xl ${g} shadow-soft hover:scale-110 transition-transform`} />
+              <button key={g} aria-label={`Select ${g.replace("gradient-", "")} theme`} className={`w-12 h-12 rounded-2xl ${g} shadow-soft hover:scale-110 transition-transform`} />
             ))}
           </div>
         </Section>
@@ -111,7 +111,7 @@ const Stat = ({ label, value }: { label: string; value: string }) => (
 
 const Section = ({ title, children }: { title: string; children: React.ReactNode }) => (
   <section>
-    <p className="text-sm font-extrabold mb-2">{title}</p>
+    <h2 className="text-sm font-extrabold mb-2">{title}</h2>
     {children}
   </section>
 );
