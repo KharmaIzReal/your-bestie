@@ -31,7 +31,7 @@ export const besties: Bestie[] = [
     music: ["Clairo", "Mitski", "Beabadoobee"],
     socialEnergy: 3, sleepSchedule: "Night owl", pets: "Two cats 🐱",
     goals: ["Brunch buddy", "Concert plus-one", "Honest convos"],
-    location: "Brooklyn, NY", distance: 2, compatibility: 96, verified: true,
+    location: "Mission, San Francisco", distance: 2, compatibility: 96, verified: true,
   },
   {
     id: "2", name: "Jordan", age: 25, pronouns: "they/them",
@@ -42,7 +42,7 @@ export const besties: Bestie[] = [
     music: ["Tyler the Creator", "Steve Lacy", "Frank Ocean"],
     socialEnergy: 4, sleepSchedule: "Balanced", pets: "Dog named Miso 🐶",
     goals: ["Studio sessions", "Skate park hangs"],
-    location: "Brooklyn, NY", distance: 3, compatibility: 92, verified: true,
+    location: "Hayes Valley, San Francisco", distance: 3, compatibility: 92, verified: true,
   },
   {
     id: "3", name: "Aria", age: 22, pronouns: "she/her",
@@ -53,7 +53,7 @@ export const besties: Bestie[] = [
     music: ["Taylor Swift", "Olivia Rodrigo", "Sabrina Carpenter"],
     socialEnergy: 5, sleepSchedule: "Balanced", pets: "Goldfish",
     goals: ["Travel buddy", "Workout partner", "Brunch crew"],
-    location: "Manhattan, NY", distance: 5, compatibility: 89, verified: false,
+    location: "North Beach, San Francisco", distance: 5, compatibility: 89, verified: false,
   },
   {
     id: "4", name: "Sam", age: 27, pronouns: "he/him",
