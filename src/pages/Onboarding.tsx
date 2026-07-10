@@ -7,8 +7,8 @@ import { ArrowRight, ArrowLeft, Sparkles, Check } from "lucide-react";
 import { quizQuestions } from "@/data/mockData";
 import { SEO } from "@/components/SEO";
 
-const interests = ["Matcha","Thrifting","Yoga","Hiking","Anime","Concerts","Reading","Baking","Photography","Gaming","Pilates","Coffee","Travel","Karaoke","Art","Plants","Skating","Cooking","Movies","F1"];
-const goals = ["Brunch buddy","Workout partner","Travel buddy","Deep convos","Concert plus-one","Game nights","Cafe hopping","Just vibes"];
+const interests = ["Streetwear","Sneaker drops","Graffiti","Vinyl","Hip hop","Skating","Cyphers","Beat making","Block parties","Bodega runs","Thrift flips","Zines","Screen printing","Analog photo","Warehouse sets","Basketball","Parkour","Turntables","Underground shows","Sticker slaps"];
+const goals = ["Cypher crew","Skate homies","Show buddy","Late-night convos","Studio partner","Sneaker plug","Art collab","Just vibes"];
 
 const Onboarding = () => {
   const navigate = useNavigate();
