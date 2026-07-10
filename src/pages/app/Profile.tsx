@@ -3,8 +3,8 @@ import { useState } from "react";
 
 const Profile = () => {
   const [showSettings, setShowSettings] = useState(false);
-  const interests = ["Matcha", "Indie films", "Yoga", "Journaling", "Plants"];
-  const goals = ["Brunch buddy", "Deep convos", "Concert plus-one"];
+  const interests = ["Streetwear", "Vinyl", "Graffiti", "Cyphers", "Thrift flips"];
+  const goals = ["Cypher crew", "Late-night convos", "Show buddy"];
 
   return (
     <div className="animate-fade-in">

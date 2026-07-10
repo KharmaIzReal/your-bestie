@@ -26,7 +26,7 @@ export const besties: Bestie[] = [
     id: "1", name: "Maya", age: 23, pronouns: "she/her",
     bio: "Plant mom 🌿 always down for matcha walks & deep convos at 2am",
     avatar: av("maya"), photos: [av("maya"), av("maya2"), av("maya3")],
-    interests: ["Matcha", "Thrifting", "Indie films", "Journaling", "Yoga"],
+    interests: ["Streetwear", "Thrift flips", "Graffiti tours", "Vinyl crates", "Rooftop cyphers"],
     vibe: "Cozy bookworm",
     music: ["Clairo", "Mitski", "Beabadoobee"],
     socialEnergy: 3, sleepSchedule: "Night owl", pets: "Two cats 🐱",
@@ -37,7 +37,7 @@ export const besties: Bestie[] = [
     id: "2", name: "Jordan", age: 25, pronouns: "they/them",
     bio: "Skater, sound designer, will rate your playlist out of 10 ✨",
     avatar: av("jordan"), photos: [av("jordan"), av("jordan2")],
-    interests: ["Skating", "Vinyl", "Coffee", "Photography"],
+    interests: ["Skate spots", "Turntables", "Bodega runs", "Analog photo", "Sneaker drops"],
     vibe: "Chill creative",
     music: ["Tyler the Creator", "Steve Lacy", "Frank Ocean"],
     socialEnergy: 4, sleepSchedule: "Balanced", pets: "Dog named Miso 🐶",
@@ -48,7 +48,7 @@ export const besties: Bestie[] = [
     id: "3", name: "Aria", age: 22, pronouns: "she/her",
     bio: "Pilates princess by day, karaoke queen by night 🎤",
     avatar: av("aria"), photos: [av("aria"), av("aria2")],
-    interests: ["Pilates", "Karaoke", "Sushi", "Tarot", "Travel"],
+    interests: ["Dance battles", "Nail art", "Late-night ramen", "Block parties", "Subway sketching"],
     vibe: "Sparkly extrovert",
     music: ["Taylor Swift", "Olivia Rodrigo", "Sabrina Carpenter"],
     socialEnergy: 5, sleepSchedule: "Balanced", pets: "Goldfish",
@@ -59,7 +59,7 @@ export const besties: Bestie[] = [
     id: "4", name: "Sam", age: 27, pronouns: "he/him",
     bio: "Hiking + ramen + bad puns. Looking for a hype friend 🥾",
     avatar: av("sam"), photos: [av("sam")],
-    interests: ["Hiking", "Cooking", "Anime", "Board games"],
+    interests: ["Basketball courts", "Taco trucks", "Beat making", "Vintage tees", "Arcade nights"],
     vibe: "Wholesome adventurer",
     music: ["Bon Iver", "Phoebe Bridgers", "The 1975"],
     socialEnergy: 3, sleepSchedule: "Early bird", pets: "None",
@@ -70,7 +70,7 @@ export const besties: Bestie[] = [
     id: "5", name: "Lena", age: 24, pronouns: "she/her",
     bio: "Soft launch your friendship era with me 💌 baker & illustrator",
     avatar: av("lena"), photos: [av("lena"), av("lena2")],
-    interests: ["Baking", "Illustration", "Coffee shops", "Pinterest"],
+    interests: ["Zine making", "Screen printing", "Underground shows", "Sticker slaps", "Coffee dives"],
     vibe: "Soft + creative",
     music: ["Laufey", "Faye Webster", "Adrianne Lenker"],
     socialEnergy: 2, sleepSchedule: "Early bird", pets: "Bunny 🐰",
@@ -81,7 +81,7 @@ export const besties: Bestie[] = [
     id: "6", name: "Kai", age: 26, pronouns: "he/they",
     bio: "Run club, climbing gym, late night tacos 🌮 let's gooo",
     avatar: av("kai"), photos: [av("kai")],
-    interests: ["Running", "Climbing", "Tacos", "F1"],
+    interests: ["Parkour", "Bouldering", "Street food", "Fixed gear", "Warehouse sets"],
     vibe: "High energy hype",
     music: ["Glass Animals", "Tame Impala", "Vampire Weekend"],
     socialEnergy: 5, sleepSchedule: "Balanced", pets: "None",
@@ -117,10 +117,10 @@ export const chats: { bestie: Bestie; lastMessage: string; time: string; unread:
 ];
 
 export const groups = [
-  { id: "g1", name: "Brooklyn Brunch Club", emoji: "🥐", members: 8, nextHangout: "Sat 11am · Cafe Mogador", color: "gradient-warm" },
-  { id: "g2", name: "Trail Besties NYC", emoji: "🥾", members: 12, nextHangout: "Sun 8am · Bear Mountain", color: "gradient-accent" },
-  { id: "g3", name: "Cozy Movie Nights", emoji: "🎬", members: 6, nextHangout: "Fri 8pm · Maya's place", color: "gradient-secondary" },
-  { id: "g4", name: "Pottery & Wine", emoji: "🏺", members: 5, nextHangout: "Wed 7pm · The Painted Pot", color: "gradient-sunset" },
+  { id: "g1", name: "Bodega Cypher Collective", emoji: "🎤", members: 8, nextHangout: "Sat 11pm · Bushwick rooftop", color: "gradient-warm" },
+  { id: "g2", name: "Concrete Sneaker Heads", emoji: "👟", members: 12, nextHangout: "Sun 2pm · SoHo drop", color: "gradient-accent" },
+  { id: "g3", name: "Underground Vinyl Club", emoji: "💿", members: 6, nextHangout: "Fri 10pm · Basement set", color: "gradient-secondary" },
+  { id: "g4", name: "Graffiti + Grit Crew", emoji: "🎨", members: 5, nextHangout: "Wed 9pm · LES walls", color: "gradient-sunset" },
 ];
 
 export const icebreakers = [
