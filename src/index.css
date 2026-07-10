@@ -136,6 +136,12 @@
   .neon-border {
     box-shadow: inset 0 0 0 1px hsl(130 100% 55% / 0.5), 0 0 12px hsl(130 100% 55% / 0.25);
   }
+  /* Sharpen the softest tailwind roundings for a zine/street-poster feel */
+  .rounded-3xl { border-radius: 0.625rem; }
+  .rounded-\[2rem\] { border-radius: 0.75rem; }
+  .rounded-\[2\.5rem\] { border-radius: 0.875rem; }
+  .rounded-\[3rem\] { border-radius: 1rem; }
+  .rounded-2xl { border-radius: 0.5rem; }
 }
 
 @font-face {
